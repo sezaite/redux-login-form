@@ -1,3 +1,3 @@
 # React Redux Login Form
 
-published at:
+published at:  https://sezaite.github.io/redux-login-form/
