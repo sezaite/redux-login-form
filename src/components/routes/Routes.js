@@ -10,7 +10,7 @@ function Routes() {
         <Router>
             <Switch>
                 <PublicRoute component={Login} exact path="/redux-login-form" />
-                <ProtectedRoute component={Logout} exact path="/welcome" />
+                <ProtectedRoute component={Logout} exact path="/redux-login-form/welcome" />
                 <Route path="*" component={NotFound} />
             </Switch>
         </Router>
