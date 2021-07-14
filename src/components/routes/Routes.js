@@ -9,7 +9,7 @@ function Routes() {
     return (
         <Router>
             <Switch>
-                <PublicRoute component={Login} exact path="/" />
+                <PublicRoute component={Login} exact path="/redux-login-form" />
                 <ProtectedRoute component={Logout} exact path="/welcome" />
                 <Route path="*" component={NotFound} />
             </Switch>
