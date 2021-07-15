@@ -7,10 +7,10 @@ import NotFound from '../NotFound';
 
 function Routes() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Switch>
-                <PublicRoute component={Login} exact path="/redux-login-form" />
-                <ProtectedRoute component={Logout} exact path="/redux-login-form/welcome" />
+                <PublicRoute component={Login} exact path="/" />
+                <ProtectedRoute component={Logout} exact path="/welcome" />
                 <Route path="*" component={NotFound} />
             </Switch>
         </Router>
